@@ -7,7 +7,8 @@ module.exports = {
         invalidTokenMessage: 'Failed to authenticate token.'
     },
     Register: {
-        successMessage: "User created successfully"
+        successMessage: "User created successfully.",
+        userExistMessage: "User already exist."
     },
     Shared: {
         errorMessage: "Error occured",

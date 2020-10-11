@@ -18,5 +18,11 @@ const User = new Schema({
     }
 })
 
-module.exports = mongoose.model('User', User);
+const Access = new Schema({
+    email: { type: String },
+    verificationCode: { type: String },
+    creationTime: { type: Date }
+})
+
+module.exports = { User: mongoose.model('User', User), Access: mongoose.model('Access', Access) };
 
